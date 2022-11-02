@@ -12,9 +12,11 @@ import {
     CREATED_FILTER
 } from './comunes/utils'
 
+export const server = 'https://pi-dogs-production-0601.up.railway.app'
+
 export function getDogs() {
     return async function (dispatch) {
-        var response = await axios.get(`http://localhost:3001/dogs`)
+        var response = await axios.get(`${server}/dogs`)
         return dispatch({
             type: GET_DOGS,
             payload: response.data
@@ -34,7 +36,7 @@ export function getNameDogs(payload) {
 
 export function postNewDogs(data) {
     return async function (dispatch) {
-        var response = await axios.post(`http://localhost:3001/dogs/create`, data);
+        var response = await axios.post(`${server}/create`, data);
         return dispatch({
             type: POST_DOG,
             payload: response.data
@@ -44,7 +46,7 @@ export function postNewDogs(data) {
 
 export function getTemperament() {
     return async function (dispatch) {
-        var response = await axios.get(`http://localhost:3001/temperament`);
+        var response = await axios.get(`${server}/temperament`);
         return dispatch({
             type: GET_TEMP,
             payload: response.data
@@ -55,7 +57,7 @@ export function getTemperament() {
 export function getDetail(data) {
     const id = data.match.params.id
     return async function (dispatch) {
-        var response = await axios.get(`http://localhost:3001/dogs/${id}`);
+        var response = await axios.get(`${server}/dogs/${id}`);
         return dispatch({
             type: GET_DETAIL,
             payload: response.data
