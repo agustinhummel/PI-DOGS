@@ -18,11 +18,11 @@ export default function SearchBar() {
         setInput(e.target.value)
     }
 
-    // useEffect(() => {
-    //     if (input.length === 0) {
-    //         searcher()
-    //     }
-    // }, [input])
+    useEffect(() => {
+        if (input.length === 0) {
+            searcher()
+        }
+    }, [input])
 
     return (
         <div className="search">
