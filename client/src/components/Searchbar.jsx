@@ -22,7 +22,7 @@ export default function SearchBar() {
         if (input === 0) {
             searcher()
         }
-    }, [input])
+    })
 
     return (
         <div className="search">
