@@ -7,6 +7,7 @@ import '../style/searchbar.css';
 
 export default function SearchBar() {
     const [input, setInput] = useState('')
+
     const dispatch = useDispatch()
 
     const searcher = (e) => {
