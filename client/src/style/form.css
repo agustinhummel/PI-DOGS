@@ -1,0 +1,171 @@
+.Create {
+    background-image: url('../images/front-view-of-beautiful-dog-with-copy-space.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin-bottom: auto;
+
+}
+
+
+.CreationForm {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+.form {
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-right: auto;
+    height: auto;
+    padding: 10px;
+    border: 3px solid #29323c;
+    border-radius: 15px;
+    background-color: rgb(231, 218, 218, 0.3);
+    margin-bottom: 50px;
+}
+
+.Creation-FormElement {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    justify-content: space-evenly;
+    /* padding-right: none; */
+}
+
+.Creation-Label {
+    color: rgb(0, 0, 0);
+    border-radius: 8px;
+    /* border: 1px solid #29323c; */
+    padding: 4px;
+    margin: 1px;
+    margin-left: 15px;
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 500;
+}
+
+.Creation-Input {
+    border-radius: 7px;
+    border: none;
+
+}
+
+.Form-Errors {
+    display: flex;
+    align-items: center;
+    background-color: red;
+    color: white;
+    height: 40px;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-left: 8px;
+    border-radius: 8px;
+}
+
+.Creation-Btn {
+    margin-top: 10px;
+    padding: 4px;
+    color: white;
+    font-size: large;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    cursor: pointer;
+    background-size: 300% 100%;
+    background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}
+
+.Creation-Btn:hover {
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.checkSelect {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.errors {
+    font-family: sans-serif;
+    color: #f51000;
+    font-size: 14px;
+}
+
+.deleteBtn {
+    border: none;
+    background-color: rgb(189, 15, 15);
+    border-radius: 50px;
+
+}
+
+.checkSelect {
+
+    border-radius: 50px;
+    background-color: rgba(158, 138, 25, 0.705);
+    border: solid 1px #000000
+}
+
+.deleteBtn:hover {
+    background-color: #f51000;
+}
+
+
+.msg {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.goBackButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(0, 0, 0);
+    background-color: #B59C6D;
+    font-size: 17px;
+    text-align: center;
+    padding: auto;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 1px #B59C6D;
+    cursor: pointer;
+}
+
+.goBackButton:hover {
+    color: #ffffff;
+    background-color: rgba(158, 138, 25, 0.705);
+}
+
+.submitButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(0, 0, 0);
+    background-color: #B59C6D;
+    font-size: 17px;
+    padding: auto;
+
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 1px #B59C6D;
+
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    color: #ffffff;
+    background-color: rgba(158, 138, 25, 0.705);
+}

@@ -1,0 +1,10 @@
+.error {
+
+    background-color: transparent;
+}
+
+.msg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
