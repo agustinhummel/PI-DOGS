@@ -19,7 +19,7 @@ export default function SearchBar() {
     }
 
     useEffect(() => {
-        if (input.length === 0) {
+        if (input === 0) {
             searcher()
         }
     }, [input])
