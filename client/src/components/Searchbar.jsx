@@ -11,7 +11,7 @@ export default function SearchBar() {
 
     const searcher = (e) => {
         dispatch(getNameDogs(input));
-        setInput('')
+
     }
 
     const onChange = (e) => {
