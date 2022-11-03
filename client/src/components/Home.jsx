@@ -18,7 +18,7 @@ export default function Home() {
     const [order, setOrder] = useState('');
 
     const [page, setPage] = useState(1);
-    const [forPage, setForPage] = useState(8);
+    const [forPage] = useState(8);
 
     const max = Math.ceil(getAllDogs.length / forPage);
 
