@@ -15,10 +15,10 @@ export default function Home() {
     const totalTemp = useSelector((state) => state.temperament)
     const dispatch = useDispatch();
 
-    const [setOrder] = useState('');
+    const [order, setOrder] = useState('');
 
     const [page, setPage] = useState(1);
-    const [forPage] = useState(8);
+    const [forPage, setForPage] = useState(8);
 
     const max = Math.ceil(getAllDogs.length / forPage);
 
@@ -28,11 +28,11 @@ export default function Home() {
         if (e.target.value === 'all') {
             dispatch(getDogs())
             setPage(1)
-            setOrder(`Order ${e.target.value}`)
+            setOrder(`${order} ${e.target.value}`)
         } else {
             dispatch(sortByName(e.target.value));
             setPage(1)
-            setOrder(`Order ${e.target.value}`)
+            setOrder(`${order} ${e.target.value}`)
         }
 
     }
@@ -42,11 +42,11 @@ export default function Home() {
         if (e.target.value === 'all') {
             dispatch(getDogs())
             setPage(1)
-            setOrder(`Order ${e.target.value}`)
+            setOrder(`${order} ${e.target.value}`)
         } else {
             dispatch(weightSort(e.target.value));
             setPage(1)
-            setOrder(`Order ${e.target.value}`)
+            setOrder(`${order} ${e.target.value}`)
         }
     }
 
@@ -54,7 +54,7 @@ export default function Home() {
         e.preventDefault();
         dispatch(filterByTemp(e.target.value))
         setPage(1)
-        setOrder(`Order ${e.target.value}`)
+        setOrder(`${order} ${e.target.value}`)
     }
 
     function handleCreate(e) {
@@ -62,7 +62,7 @@ export default function Home() {
         if (e.target.value === 'all') {
             dispatch(getDogs())
             setPage(1)
-            setOrder(`Order ${e.target.value}`)
+            setOrder(`${order} ${e.target.value}`)
         } else {
             dispatch(filterByCreated(e.target.value))
             setPage(1)
